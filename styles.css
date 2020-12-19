@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /*navbar*/
+  .navbar {
+    background-color: var(--primary-color);
+    color: black;
+    height: auto;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: black;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 2px #16D7BA  solid;
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+  
+  /*showcase*/
+
+  .showcase {
+    height: 400px;
+    background:linear-gradient(-45deg, #0A416C,#16D7BA );
+    color: #0A416C;
+    position: relative;
+  }
+  
+  .showcase h1 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  
+  .showcase p {
+    margin: 20px 0;
+    color: white;
+  }
+  
+  .showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% auto;
+    gap: 30px;
+  }
+  
+  .showcase-text {
+    animation: slideInFromLeft 1s ease-in;
+  }
+  
+  .showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
+  }
+  
+  .showcase-form .form-control {
+    margin: 30px 0;
+  }
+  
+  .showcase-form input[type='text'],
+  .showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+  }
+  
+  .showcase-form input:focus {
+    outline: none;
+  }
+  
+  .showcase::before,
+  .showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: #fff;
+  }
+
+/* Stats */
+  .stats {
+    padding-top: 70px;
+  }
+  
+  .stats-heading {
+    max-width: 500px;
+    margin:  50px;
+  }
+  
+ .stats .container h1 {
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  .stats .grid h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .stats .grid p {
+    font-size: 15px;
+  }
+  
+  /*xxx*/
+.stats1{
+    background:linear-gradient(45deg,#16D7BA, #0A416C );
+    margin-top: 50px;
+    padding-top: 30px;
+}
+.stats1 h1{
+    font-size: 50px;
+    margin: auto;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.stats1 .custom{
+    padding-top: 100px;
+}
+
+.stats1 .custom .text-center h3{
+    font-size: 35px;
+    color:white;
+}
+
+.stats1 .custom .text-center p{
+    font-size: 20px;
+    color: white;
+}
+
+.stats1 .custom img{
+    margin: auto ;
+}
+
+
+  .custom1{
+    margin: 0;
+    background-color: #F8F9FB;
+    min-width:100vw;
+    min-height:100vh;
+    overflow: hidden;
+}
+.stats .headline{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.price-comparison{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 1rem;
+    padding-top: 5rem;
+}
+.custom1 h1{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+
+.price-column{
+    background-color: white;
+    box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+    padding: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 275px;
+    border-radius: 8px;
+}
+
+.popular{
+    background-color: #16D7BA;
+    color: white;
+    box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+    margin-top: -1.5rem;
+    padding-top: 3.5rem;
+    margin-bottom: -1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+ .price-column:first-child{
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+ }
+
+ .price-column:last-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.price-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.price{
+    font-size: 3.5rem;
+    display: flex;
+}
+
+.dollar-sign{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-right: 0.25rem;
+}
+.per-month{
+    font-size: .75rem;
+    align-self: flex-end;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+}
+
+.plan-name{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin:2rem 0;
+}
+
+.popular .divider{
+    background-color: rgba(225 , 225, 225, 0.2);
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+.feature img{
+    height: 1.1em;
+    width: 1.1em;
+    margin-right: .5rem;
+}
+
+.feature p{
+    padding: .5rem;
+}
+
+.transaction{
+    position: relative;
+    top: 10px;
+}
+.price-column .most-popular{
+    position: relative;
+    bottom: 1rem;
+    text-align: center;
+}
+.cta{
+    border: none;
+    background-color:	rgba(55, 187, 158,0.8);
+    color: white;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 3rem;
+}
+
+.popular .cta{
+    background-color:white ;
+    color: 	rgb(55, 187, 158);
+}
+
+  /*utilities*/
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+ 
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #16D7BA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+  }
+  
+  .btn:hover {
+    transform: scale(0.98);
+  }
+
+  .bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.text-center {
+    text-align: center;
+  }
+
+
+/* Margin */
+.my-1 {
+    margin: 1rem 0;
+  }
+  
+  .my-2 {
+    margin: 1.5rem 0;
+  }
+  
+  .my-3 {
+    margin: 2rem 0;
+  }
+  
+  .my-4 {
+    margin: 3rem 0;
+  }
+  
+  .my-5 {
+    margin: 4rem 0;
+  }
