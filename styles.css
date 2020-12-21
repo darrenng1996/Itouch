@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -38,7 +37,7 @@
   }
   
   .navbar a:hover {
-    border-bottom: 2px #16D7BA  solid;
+    border-bottom: 2px #0A416C  solid;
   }
   
   .navbar .flex {
@@ -48,8 +47,9 @@
   /*showcase*/
 
   .showcase {
-    height: 400px;
-    background:linear-gradient(-45deg, #0A416C,#16D7BA );
+    height: 500px;
+    background:url(backoffice.png);
+    background-size: cover;
     color: #0A416C;
     position: relative;
   }
@@ -57,65 +57,75 @@
   .showcase h1 {
     font-size: 40px;
     font-weight: 800;
+    padding-left: 3rem;
   }
   
   .showcase p {
     margin: 20px 0;
     color: white;
-  }
-  
-  .showcase .grid {
-    overflow: visible;
-    grid-template-columns: 55% auto;
-    gap: 30px;
-  }
-  
-  .showcase-text {
-    animation: slideInFromLeft 1s ease-in;
-  }
-  
-  .showcase-form {
-    position: relative;
-    top: 60px;
-    height: 350px;
-    width: 400px;
-    padding: 40px;
-    z-index: 100;
-    justify-self: flex-end;
-    animation: slideInFromRight 1s ease-in;
-  }
-  
-  .showcase-form .form-control {
-    margin: 30px 0;
-  }
-  
-  .showcase-form input[type='text'],
-  .showcase-form input[type='email'] {
-    border: 0;
-    border-bottom: 1px solid #b4becb;
-    width: 100%;
-    padding: 3px;
-    font-size: 16px;
-  }
-  
-  .showcase-form input:focus {
-    outline: none;
-  }
-  
-  .showcase::before,
-  .showcase::after {
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -70px;
-    right: 0;
-    left: 0;
-    background: #fff;
+    padding-left: 3rem;
   }
 
+  .showcase a {
+    margin-left: 3rem;
+  }
+  
+  .showcase .container {
+    overflow: visible;
+    gap: 30px;
+    width: 85%;
+    
+  }
+
+  /*services*/
+
+  .stats2{
+    background-color: #F8F9FB ;
+  }
+
+  .stats2 .container .card1{
+    min-height: 200px;
+  }
+  
+  .stats2 .headline {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    margin: auto;
+    color: #1f3841;
+    padding-top: 2rem;
+}
+ /*about-us*/
+  .about-us{
+    padding-top:2rem;
+    padding-bottom: 5rem;
+    background-color:#F8F9FB ;
+    overflow: hidden;
+    
+  }
+  .container2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20rem;
+    padding-top: 5rem;
+    
+  }
+  .heading h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 2rem;
+  }
+
+  
 /* Stats */
   .stats {
     padding-top: 70px;
+  }
+  .stats .container .card{
+    min-height: 230px;
   }
   
   .stats-heading {
@@ -136,17 +146,26 @@
   .stats .grid p {
     font-size: 15px;
   }
+
+  .stats .headline {
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    margin: auto;
+    color: #1f3841;
+}
+
   
   /*xxx*/
 .stats1{
-    background:linear-gradient(45deg,#16D7BA, #0A416C );
+    background:linear-gradient(-45deg,#f55f4b,#f1b02c  );
     margin-top: 50px;
     padding-top: 30px;
 }
 .stats1 h1{
     font-size: 50px;
     margin: auto;
-    color: #fff;
+    color: #1f3841;
     font-weight: bold;
 
 }
@@ -167,6 +186,8 @@
 
 .stats1 .custom img{
     margin: auto ;
+    width: 90%;
+    height: auto;
 }
 
 
@@ -176,13 +197,24 @@
     min-width:100vw;
     min-height:100vh;
     overflow: hidden;
+    padding-bottom: 5rem;
 }
-.stats .headline{
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    margin-top: 3rem;
 
+.custom2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tick{
+  margin: 8px;
+  padding-top: 8px;
 }
 
 .price-comparison{
@@ -212,7 +244,7 @@
 }
 
 .popular{
-    background-color: #16D7BA;
+    background-color: rgb(243, 171, 28);
     color: white;
     box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
     margin-top: -1.5rem;
@@ -299,7 +331,7 @@
 }
 .cta{
     border: none;
-    background-color:	rgba(55, 187, 158,0.8);
+    background-color:	rgba(243, 171, 28,1);
     color: white;
     width: 100%;
     padding: 0.75rem 1rem;
@@ -311,10 +343,228 @@
 
 .popular .cta{
     background-color:white ;
-    color: 	rgb(55, 187, 158);
+    color: 	rgb(243, 171, 28);
 }
 
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+/*payroll*/
+
+.payroll .headline{
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  padding: 5rem 0;
+}
+.pricing-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: .3s linear;
+  
+}
+
+.pricing-card-header{
+  background-color: #f1b02c;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #f1b02c;
+}
+
+.price1{
+  font-size: 70px;
+  color: #f1b02c;
+  margin: 40px 0;
+  transition: .2s linear;
+  display: flex;
+  justify-content: center;
+}
+
+.price1 sup, .price1 span{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+}
+
+.pricing-card li{
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #f1b02c;
+  color: #f1b02c;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn:hover{
+  background-color: #f1b02c;
+  color: #fff;
+}
+
+}
+
+/*contact us*/
+.showcase-form input[type='text'],
+.showcase-form input[type='email'], 
+.showcase-form textarea{
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:linear-gradient(-45deg,#f55f4b,#f1b02c  ) ;
+}
+
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  bottom: 10rem;
+}
+
+.contact .content h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: #0A416C;
+}
+
+.contact .content p{
+  padding-top: 1rem;
+  font-weight: 500;
+  color:#0A416C;
+}
+
+.container1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  bottom: 5rem;
+}
+
+.container1 .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 .contactInfo .box{
+  position:relative;
+  padding: 20px 0 ;
+  display: flex;
+}
+
+.container1 .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.container1 .contactInfo .box .text{
+  font-size: 16px;
+  color: #0A416C;
+}
+
+
+.container1 .contactInfo .box .text h3{
+  font-size: 20px;
+  color: #0A416C;
+}
+.contactForm{
+  width: 40%;
+  padding: 10px;
+}
+
+.contactForm  .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.contactForm  .inputBox input[type='text'],
+.contactForm  .inputBox input[type='email'],
+.contactForm  .inputBox textarea{
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+}
+
+
   /*utilities*/
+
   .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -329,6 +579,14 @@
   }
 
   .card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+  }
+  .card1 {
     background-color: #fff;
     color: #333;
     border-radius: 10px;
@@ -361,14 +619,14 @@
     display: inline-block;
     padding: 10px 30px;
     cursor: pointer;
-    background: #16D7BA;
+    background: #f3ab1c;
     color: white;
     border: none;
     border-radius: 5px;
   }
   .btn-outline {
-    background-color: transparent;
-    border: 1px #fff solid;
+    background-color: #0A416C;
+    
   }
   
   .btn:hover {
